@@ -1,0 +1,279 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: sans-serif;
+    color: white;
+}
+
+.container{
+
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 3fr 9fr;
+    grid-template-rows: 5fr 5fr;
+    grid-template-areas: 
+    "section header"
+    "aside main"
+    "footer footer" 
+    ;
+    gap: 10px;
+    padding: 10px;
+}
+
+section{
+    padding: 20px;
+    gap: 20px;  
+    grid-area: section;
+    color: white;
+    background-color: #121212;
+    border-radius: 8px;
+}
+
+body{
+    background-color: black;
+}
+
+
+header{
+    grid-area: header;
+    height: 100px;
+    background-color: #121212;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 30px;
+    padding-right: 10px;
+    color: white;
+    border-radius: 8px;
+}
+
+header button {
+    color: black;
+    padding: 4px 16px;
+    border-radius: 40px;
+    width: 100px;
+    font-weight: bold;
+    height: 55px;
+    font-weight: bold;
+    border: transparent;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+header a {
+    color: #b3b3b3;
+}
+
+header a:hover {
+    color: white;
+}
+
+.arrows {
+    display: flex;
+    gap: 20px;
+}
+
+.arrow {
+    background-color: #000000b3;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 100%;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.arrow i {
+    color: #b3b3b3;
+}
+
+.login {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+aside{
+    grid-area: aside;
+    background-color: #121212;
+    border-radius: 8px;
+}
+
+main{
+    grid-area: main;
+    background-color: #121212;
+    display: grid;
+    grid-template-rows: 0px;
+    border-radius: 8px;
+    padding: 20px;
+    gap: 30px;
+}
+
+.boxes{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 200px));
+    gap: 10px;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    height: 260px;
+    background-color: black;
+    padding: 20px;
+    border-radius: 8px;
+    align-items: left;
+    gap: 10px;
+}
+
+.box h5 {
+    color: #b3b3b3;
+}
+
+.box img {
+    width: 158px;
+    height: 158px;
+    border-radius: 8px;
+}
+
+footer{
+    grid-area: footer;
+    display: fixed;
+    background-color: #121212;
+    height: 40px;
+    color: white;
+}
+
+
+.title {
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.title a {
+    color: #6a6a6a;
+    cursor: pointer;
+}
+
+.title a:hover {
+    color: white;
+}
+
+.divAside {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 20px;
+}
+
+.infoAside {
+    background-color: #242424;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.infoAside button {
+    color: black;
+    padding: 4px 16px;
+    border-radius: 40px;
+    width: 140px;
+    line-height: 100%;
+    height: 35px;
+    font-weight: bold;
+    border: transparent;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.infoAside h5 {
+    color: white;
+}
+
+.divInfosSection {
+    color: #b3b3b3;
+    display: flex;
+    cursor: pointer;
+}
+
+.divInfosSection i {
+    margin-right: 13px;
+    font-size: 16px;
+    line-height: 100%;
+}
+
+.infosSection {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+.asideEnd {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 200px;
+    padding: 20px;
+}
+
+.asideEnd a {
+    color: #b3b3b3;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.asideEnd button {
+    color: white;
+    background-color: transparent;
+    padding: 4px 16px;
+    border-radius: 40px;
+    width: 180px;
+    line-height: 100%;
+    height: 35px;
+    font-weight: bold;
+    border: 1px solid #b3b3b3;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.asideEnd button i {
+    color: #b3b3b3;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background: linear-gradient(90deg,#af2896,#509bf5);
+}
+
+.buttonFooter {
+    color: black;
+    padding: 4px 16px;
+    border-radius: 40px;
+    width: 180px;
+    line-height: 100%;
+    height: 35px;
+    font-weight: bold;
+    border: transparent;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.footerInfos {
+    padding: 10px;
+}
+
